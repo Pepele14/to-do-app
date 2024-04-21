@@ -8,21 +8,26 @@ function ToDoForm({ addTodo }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     // this function is called when the form is submitted - prevents a default form submission which would cause the page to reload
-    addTodo(value); //passed as a props >> is responsible for adding a new to-do item to the list.
 
-    console.log(value);
+    console.log("Form submitted:", value);
+    addTodo(value); //passed as a props >> is responsible for adding a new to-do item to the list.
 
     setValue(""); //function is called with an empty string clearing the input field for the next task entry.
   };
 
+  const handleChange = (e) => {
+    setValue(e.target.value);
+    console.log("Input value:", e.target.value); // Debugging
+  };
+
   return (
-    <form className="ToDoForm">
+    <form className="ToDoForm" onSubmit={handleSubmit}>
       <input
         type="text"
         className="todo-input"
         value={value}
         placeholder="Enter a task!"
-        onChange={(e) => setValue(e.target.value)} //arrow function expression - inline
+        onChange={handleChange} //arrow function expression - inline
       />
       <button type="submit" className="todo-button">
         Add Task

@@ -4,27 +4,34 @@ import { useState } from "react";
 import ToDoList from "./ToDoList";
 import { v4 as uuidv4 } from "uuid"; //installed the package with npm i uuid
 
-uuidv4();
-
 //this is basically the parent element of the todoform
 function ListBackgroundContainer() {
   const [todos, setTodos] = useState([]); // state initialised as an empty array that will then get hold of all the cool things we
   //enter such as complimenting pepe for being always cool
+  console.log("Todos: ", todos);
 
-  const addTodo = (todo) => {
-    setTodos([
-      ...todos,
-      { id: uuidv4(), task: todo, completed: false, isEditing: false },
-      console.log(todos),
-    ]);
+  const addTodo = (todoDescription) => {
+    const newTodo = {
+      id: uuidv4(),
+      task: todoDescription,
+      completed: false,
+      isEditing: false,
+    };
+    const updatedTodos = [...todos, newTodo];
+    console.log("Updated Todos:", updatedTodos);
+    setTodos(updatedTodos);
   };
   return (
-    <div>
-      {/* <h1>Get shit done!</h1> */}
-      <ToDoForm addTodo={addTodo} />
-      {todos.map((todo, index) => (
-        <ToDoList task={todo} key={index} />
-      ))}
+    <div className="list-container">
+      <div className="form-container">
+        <ToDoForm addTodo={addTodo} />
+      </div>
+
+      <div className="todos-container">
+        {todos.map((todo) => (
+          <ToDoList task={todo} key={todo.id} />
+        ))}
+      </div>
     </div>
   );
 }

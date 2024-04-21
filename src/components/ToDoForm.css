@@ -1,6 +1,7 @@
 .ToDoForm {
   display: flex;
   align-items: center; /* Center items vertically */
+  margin-top: 20px;
 }
 
 .todo-button {

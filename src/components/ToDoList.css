@@ -1,4 +1,26 @@
 .todolist-task-box {
-  background-color: black;
-  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e07a5f;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.task-content {
+  flex-grow: 1; /* Allows the content to grow to take available space */
+  overflow-wrap: break-word; /* Allows text to wrap within the container */
+}
+
+.task-text {
+  margin: 0;
+  color: white;
+}
+
+.task-icons {
+  display: flex;
+  gap: 10px; /* Spacing between the icons */
+  align-items: center; /* Align icons vertically centered with the text */
 }
