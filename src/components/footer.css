@@ -1,9 +1,8 @@
 .hyperlink-to-repo {
-  color: pink;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 5px;
+  color: #f2cc8f;
+  position: fixed;
+  bottom: 10px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to center the text */
   font-size: smaller;
-  margin-left: 45%;
 }

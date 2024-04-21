@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -15,3 +15,5 @@ function Footer() {
 }
 
 export default Footer;
+
+//we can change the a tag with the other one we ve seen in the class which is most likely better

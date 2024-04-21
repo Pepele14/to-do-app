@@ -1,0 +1,15 @@
+.ListBackgroundContainer {
+  width: 60%;
+  max-width: 600px;
+  min-height: 200px; /* Minimum height to ensure visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background-color: #1d1f2b;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

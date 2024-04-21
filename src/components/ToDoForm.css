@@ -1,0 +1,21 @@
+.ToDoForm {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.todo-button {
+  background-color: #81b29a;
+  margin: 0;
+  border: 0;
+  height: 50px;
+}
+
+.todo-input {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  border: 0;
+  height: 50px;
+  width: 300px;
+  color: black;
+  margin-right: 10px;
+}

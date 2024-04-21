@@ -1,0 +1,25 @@
+.sidebar-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.sidebar {
+  margin-left: 10px; /* Add some space between sidebar items */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #f2cc8f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #1d1f2c;
+}
+
+.sidebar a:hover {
+  background-color: #81b29a;
+}
