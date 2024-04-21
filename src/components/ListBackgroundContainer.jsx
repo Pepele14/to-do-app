@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from "uuid"; //installed the package with npm i uuid
 function ListBackgroundContainer() {
   const [todos, setTodos] = useState([]); // state initialised as an empty array that will then get hold of all the cool things we
   //enter such as complimenting pepe for being always cool
-  console.log("Todos: ", todos);
+  // console.log("Todos: ", todos);
 
   const addTodo = (todoDescription) => {
     const newTodo = {
@@ -18,7 +18,7 @@ function ListBackgroundContainer() {
       isEditing: false,
     };
     const updatedTodos = [...todos, newTodo];
-    console.log("Updated Todos:", updatedTodos);
+    // console.log("Updated Todos:", updatedTodos);
     setTodos(updatedTodos);
   };
   return (
@@ -29,7 +29,12 @@ function ListBackgroundContainer() {
 
       <div className="todos-container">
         {todos.map((todo) => (
-          <ToDoList task={todo} key={todo.id} />
+          <ToDoList
+            task={todo}
+            key={todo.id}
+            todos={todos}
+            setTodos={setTodos}
+          />
         ))}
       </div>
     </div>
