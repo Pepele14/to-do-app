@@ -8,7 +8,7 @@ function Footer() {
         href="https://github.com/Pepele14/to-do-app"
         className="hyperlink-to-repo"
       >
-        GitHub Repository1
+        GitHub Repository
       </a>
     </div>
   );
