@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //installed 4 packages in total to use icons from fontawesome
 import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "./ToDoList.css";
 
 function ToDoList({ task, todos, setTodos }) {
@@ -22,10 +23,15 @@ function ToDoList({ task, todos, setTodos }) {
   return (
     <div className="todolist-task-box">
       <div className="task-content">
-        <p className="task-text">{task.task}</p>
+        <Link to={`/task/${task.id}`}>
+          <p className="task-text">{task.task}</p>
+        </Link>
       </div>
       <div className="task-icons">
-        <FontAwesomeIcon icon={faPenSquare} />
+        <FontAwesomeIcon
+          icon={faPenSquare}
+          onClick={() => console.log("Edit task:", task.task)}
+        />
         <FontAwesomeIcon icon={faTrash} onClick={() => handleDelete(task.id)} />
       </div>
     </div>

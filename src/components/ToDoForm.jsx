@@ -4,15 +4,19 @@ import { useState } from "react";
 function ToDoForm({ addTodo }) {
   const [value, setValue] = useState(""); //using state hook to create state to manage input value - it basically
   //represents the current value of the input field > setValue is a function to update the value state
+  const [details, setDetails] = useState("");
+  console.log(value);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // this function is called when the form is submitted - prevents a default form submission which would cause the page to reload
+    if (!value.trim()) return; // not to adding empty tasks
 
     console.log("Form submitted:", value);
-    addTodo(value); //passed as a props >> is responsible for adding a new to-do item to the list.
+    addTodo(value, details); //passed as a props >> is responsible for adding a new to-do item to the list.
 
     setValue(""); //function is called with an empty string clearing the input field for the next task entry.
+    setDetails("");
   };
 
   const handleChange = (e) => {
@@ -28,6 +32,14 @@ function ToDoForm({ addTodo }) {
         value={value}
         placeholder="Enter a task!"
         onChange={handleChange} //arrow function expression - inline
+      />
+
+      <input
+        type="text"
+        className="todo-input"
+        value={details}
+        placeholder="Enter task details"
+        onChange={(e) => setDetails(e.target.value)}
       />
       <button type="submit" className="todo-button">
         Add Task

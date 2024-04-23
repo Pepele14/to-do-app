@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import { Routes, Route } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage";
+import ItemDetails from "./pages/ItemDetails";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/task/:taskId" element={<ItemDetails />} />
         </Routes>
         <Sidebar />
         {/* <Sidebar text="Home" />
