@@ -19,9 +19,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="*" element={<NotFoundPage />} />
           <Route path="/task/:taskId" element={<ItemDetails />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
+
         <Sidebar />
         {/* <Sidebar text="Home" />
         <Sidebar text="About" /> */}
