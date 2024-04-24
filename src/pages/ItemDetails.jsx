@@ -11,6 +11,7 @@ function ItemDetails() {
   if (!task) {
     return <div>Task not found!</div>;
   }
+
   return (
     <div>
       <h1>Task Details</h1>

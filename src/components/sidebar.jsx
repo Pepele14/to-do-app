@@ -12,9 +12,6 @@ function Sidebar() {
         <Link className="sidebar-item" to="/about">
           About
         </Link>
-        <Link className="sidebar-item" to="/task/:taskId">
-          Item Details
-        </Link>
       </div>
     </div>
   );
