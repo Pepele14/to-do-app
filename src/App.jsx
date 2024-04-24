@@ -2,7 +2,6 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
-import ListBackgroundContainer from "./components/ListBackgroundContainer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import { Routes, Route } from "react-router-dom";
@@ -24,12 +23,7 @@ function App() {
         </Routes>
 
         <Sidebar />
-        {/* <Sidebar text="Home" />
-        <Sidebar text="About" /> */}
       </div>
-      {/* <div className="ListBackgroundContainer">
-        <ListBackgroundContainer />
-      </div> */}
     </div>
   );
 }
