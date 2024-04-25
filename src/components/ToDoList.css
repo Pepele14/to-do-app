@@ -4,23 +4,23 @@
   align-items: flex-start;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #e07a5f;
+  background-color: #6c6866;
   margin-top: 10px;
   border-radius: 8px;
 }
 
 .task-content {
-  flex-grow: 1; /* Allows the content to grow to take available space */
-  overflow-wrap: break-word; /* Allows text to wrap within the container */
+  flex-grow: 1;
+  overflow-wrap: break-word;
 }
 
 .task-text {
   margin: 0;
-  color: white;
+  color: gold;
 }
 
 .task-icons {
   display: flex;
-  gap: 10px; /* Spacing between the icons */
-  align-items: center; /* Align icons vertically centered with the text */
+  gap: 10px;
+  align-items: center;
 }

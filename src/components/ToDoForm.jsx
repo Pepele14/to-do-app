@@ -26,7 +26,7 @@ function ToDoForm({ addTodo }) {
         className="todo-input"
         value={value}
         placeholder="Enter a task!"
-        onChange={(e) => handleChange(e, setValue)} //arrow function expression - inline
+        onChange={(e) => handleChange(e, setValue)}
       />
 
       <input
@@ -34,7 +34,7 @@ function ToDoForm({ addTodo }) {
         className="todo-input"
         value={details}
         placeholder="Enter task details"
-        onChange={(e) => handleChange(e, setDetails)} //arrow function expression - inline
+        onChange={(e) => handleChange(e, setDetails)}
       />
       <button type="submit" className="todo-button">
         Add Task

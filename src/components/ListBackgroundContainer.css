@@ -1,7 +1,7 @@
 .ListBackgroundContainer {
   width: 60%;
   max-width: 600px;
-  min-height: 200px; /* Minimum height to ensure visibility */
+  min-height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;

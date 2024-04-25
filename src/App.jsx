@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Footer />
 
       <div className="sidebar-container">
         <Routes>
@@ -21,9 +20,9 @@ function App() {
           <Route path="/task/:taskId" element={<ItemDetails />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-
         <Sidebar />
       </div>
+      <Footer />
     </div>
   );
 }

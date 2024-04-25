@@ -1,8 +1,15 @@
-.hyperlink-to-repo {
-  color: #f2cc8f;
+.footer {
   position: fixed;
-  bottom: 10px;
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust to center the text */
-  font-size: smaller;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-link {
+  color: gold;
+  text-decoration: none;
 }
