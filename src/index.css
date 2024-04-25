@@ -28,6 +28,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #5c5a5a, #ecd5c3);
 }
 
 h1 {
@@ -47,7 +51,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #0a11a1;
 }
 button:focus,
 button:focus-visible {

@@ -1,15 +1,17 @@
 .navbar {
-  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #2d3436;
+  color: white;
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  width: 100%;
+  z-index: 1000;
 }
 
-.ulvius-logo {
-  display: flex;
-  justify-content: flex-start;
-  height: 150px;
+.navbar-logo {
+  height: 50px;
+  margin-right: 20px;
 }

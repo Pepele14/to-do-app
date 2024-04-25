@@ -21,11 +21,6 @@ function ItemDetails() {
       <p>
         <strong>Details:</strong> {task.details}
       </p>
-
-      <p>
-        <strong>Status:</strong>
-        {task.completed ? "Completed" : "Not Completed"}
-      </p>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .ToDoForm {
   display: flex;
-  align-items: center; /* Center items vertically */
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .todo-input {
-  background-color: whitesmoke;
+  background-color: rgb(216, 215, 215);
   border-radius: 8px;
   border: 0;
   height: 50px;
@@ -22,10 +22,10 @@
 }
 
 input[type="text"] {
-  width: 100%; /* Full width of the container */
+  width: 100%;
   padding: 10px;
-  margin-top: 10px; /* Spacing between the input fields */
-  border: 1px solid #ccc; /* Light grey border */
+  margin-top: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box; /* Include padding and border in the width */
+  box-sizing: border-box;
 }
