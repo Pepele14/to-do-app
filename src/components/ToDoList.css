@@ -4,7 +4,7 @@
   align-items: flex-start;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #6c6866;
+  background-color: #464341;
   margin-top: 10px;
   border-radius: 8px;
 }
@@ -16,11 +16,16 @@
 
 .task-text {
   margin: 0;
-  color: gold;
+  color: #f2cc8f;
 }
 
 .task-icons {
+  color: #f2cc8f;
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.icon-save {
+  color: #f2cc8f;
 }
