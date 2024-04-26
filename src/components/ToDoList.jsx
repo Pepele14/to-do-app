@@ -51,7 +51,11 @@ function ToDoList({ task, todos, setTodos }) {
           value={editDetails}
           onChange={(e) => setEditDetails(e.target.value)}
         />
-        <FontAwesomeIcon icon={faSave} onClick={() => handleSave(task.id)} />
+        <FontAwesomeIcon
+          icon={faSave}
+          className="icon-save"
+          onClick={() => handleSave(task.id)}
+        />
       </div>
     );
   }
@@ -64,8 +68,16 @@ function ToDoList({ task, todos, setTodos }) {
         </Link>
       </div>
       <div className="task-icons">
-        <FontAwesomeIcon icon={faPenSquare} onClick={handleEdit} />
-        <FontAwesomeIcon icon={faTrash} onClick={() => handleDelete(task.id)} />
+        <FontAwesomeIcon
+          icon={faPenSquare}
+          className="icon-color"
+          onClick={handleEdit}
+        />
+        <FontAwesomeIcon
+          icon={faTrash}
+          className="icon-color"
+          onClick={() => handleDelete(task.id)}
+        />
       </div>
     </div>
   );
